@@ -8,9 +8,8 @@ contract NinjaSword {
     uint256 public boxesOpened;
     mapping(address => uint256) public playerItems;
 
-    // Crack open a lootbox! 🎰
-    function openLootbox() public payable {
-        require(msg.value == 0.01 ether, "Price is 0.01 ETH");
+    // Crack open a FREE lootbox! 🎰
+    function openLootbox() public {
         boxesOpened++;
         
         // Pseudo random power level 🔥
